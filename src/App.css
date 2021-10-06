@@ -1,25 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.container {
+	display: grid;
+  padding: 10px;
+	margin-top: -1px;
+	margin-left: -1px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .fileListItem {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2px;
-  display: grid;
-  grid-template-columns: 25px 2fr 6fr 2fr;
+	padding: 2px;
+	display: grid;
+	grid-template-columns: 25px 2fr 6fr 2fr;
+	outline: 0.5px solid #A0A6BA;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+.fileListItem:first-of-type {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.fileListItem:last-of-type {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .fileName {
-  margin-left: 5px;
-  color: #1D7EC3;
+	margin-left: 5px;
+	color: #1d7ec3;
 }
 
-.commitMessage, .time {
-  color: #767F7A;
+.commitMessage,
+.time {
+	color: #767f7a;
 }
 
-.fileName, .commitMessage {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+.fileName,
+.commitMessage {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .time {
-  justify-self: end;
+	justify-self: end;
 }
