@@ -8,12 +8,16 @@
 }
 
 .fileListItem {
-	padding: 2px;
+	padding: 5px 20px;
 	display: grid;
 	grid-template-columns: 25px 2fr 6fr 2fr;
 	outline: 0.5px solid #A0A6BA;
 	margin-top: 1px;
 	margin-left: 1px;
+}
+
+.fileListItem:hover {
+	background-color: #F4F4F6;
 }
 
 .fileListItem:first-of-type {
@@ -28,12 +32,23 @@
 
 .fileName {
 	margin-left: 5px;
-	color: #1d7ec3;
 }
 
+.fileName,
 .commitMessage,
 .time {
-	color: #767f7a;
+	color: #49495A;
+}
+
+a {
+	color: #49495A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2361E8;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .fileName,
@@ -42,6 +57,7 @@
 	white-space: nowrap;
 	overflow: hidden;
 }
+
 
 .time {
 	justify-self: end;
