@@ -1,0 +1,25 @@
+.fileListItem {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 25px 2fr 6fr 2fr;
+}
+
+.fileName {
+  margin-left: 5px;
+  color: #1D7EC3;
+}
+
+.commitMessage, .time {
+  color: #767F7A;
+}
+
+.fileName, .commitMessage {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.time {
+  justify-self: end;
+}
