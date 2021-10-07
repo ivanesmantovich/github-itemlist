@@ -1,10 +1,3 @@
-import React, { useState, FC, ReactElement } from 'react';
-import logo from './logo.svg';
-import { CommitMessage } from './components/CommitMessage';
-import { FileIcon } from './components/FileIcon';
-import { FileName } from './components/FileName';
-import { Time } from './components/Time';
-import { FilelistItem } from './components/FilelistItem';
 import { Filelist } from './components/Filelist';
 import { FileProps } from './interfaces/FileProps';
 import './App.css';
